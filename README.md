@@ -1,5 +1,7 @@
 # Devices Over Time
 
+Live: https://devices-over-time.pages.dev
+
 A static, interactive personal device collection: 13 phones, 8 laptops, 5 desktop builds and one linked CPU upgrade. Dark mountain scenery, illustrated devices, draggable timeline, category filters, search, hover previews and accessible detail dialogs.
 
 ## Run locally
@@ -16,7 +18,7 @@ Device and scenery artwork is AI-generated illustration, not photography of the 
 
 ## Cloudflare Pages
 
-Use a dedicated project with production branch `main`, build command `npm run build`, output directory `dist`, and Node.js 22. This is entirely static and needs no database, paid software, Functions, or runtime secrets. The build supplies security and caching headers.
+The GitHub-connected Cloudflare Pages project is `devices-over-time`, with production branch `main`, build command `npm run build`, output directory `dist`, and Node.js 22. This is entirely static and needs no database, paid software, Functions, or runtime secrets. The build supplies security and caching headers.
 
 Target custom hostname: `devices.harryjameschapman.com`. Register the hostname on this Pages project before creating its CNAME to the project's assigned `pages.dev` address. Keep the portfolio project and apex records unchanged.
 
