@@ -1,0 +1,14 @@
+{
+  "name": "devices-over-time",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A personal, interactive history of phones, laptops and PC builds.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

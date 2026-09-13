@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1119" />
+    <meta name="description" content="Explore Harry's devices over time: two decades of phones, laptops, PC builds and upgrades, from 2006 to 2026." />
+    <title>My Devices — Harry James Chapman</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="preload" href="/assets/backdrop.png" as="image" />
+  </head>
+  <body>
+    <a class="skip-link" href="#timeline">Skip to the timeline</a>
+    <div class="scenery" aria-hidden="true"></div>
+    <div class="app-shell">
+      <header class="site-header">
+        <div class="identity"><h1>My Devices<span class="title-dot">.</span></h1><p>2006 <span>—</span> 2026</p></div>
+        <p class="intro">A journey through the technology<br>that shaped my everyday.</p>
+        <nav class="filters" aria-label="Filter device timeline">
+          <button class="filter active" data-category="all" aria-label="All devices" aria-pressed="true"><span data-icon="all"></span><span>All</span></button>
+          <button class="filter" data-category="phones" aria-pressed="false"><span data-icon="phones"></span><span>Phones</span></button>
+          <button class="filter" data-category="laptops" aria-pressed="false"><span data-icon="laptops"></span><span>Laptops</span></button>
+          <button class="filter" data-category="desktops" aria-pressed="false"><span data-icon="desktops"></span><span>Desktops</span></button>
+        </nav>
+        <div class="header-end"><button class="icon-button search-toggle" aria-label="Search devices" title="Search devices (/)" data-icon="search"></button><p>More than devices.<br>Moments in time.</p></div>
+      </header>
+
+      <main>
+        <section class="timeline-section" aria-label="Interactive device timeline">
+          <div class="timeline-topline"><span class="eyebrow" id="view-label">THE COLLECTION</span><span id="view-count">26 devices · 1 upgrade</span></div>
+          <button class="timeline-arrow previous" aria-label="Previous device" data-icon="left"></button>
+          <div id="timeline" class="timeline" tabindex="0" aria-label="Device timeline. Drag to explore, use left and right arrow keys, or select a device for details.">
+            <div class="timeline-track" id="timeline-track"></div>
+          </div>
+          <button class="timeline-arrow next" aria-label="Next device" data-icon="right"></button>
+          <aside class="quick-card" id="quick-card" aria-hidden="true" inert></aside>
+          <div class="empty-state" id="empty-state" hidden><span data-icon="search"></span><h2>No devices found</h2><p>Try a model, manufacturer or year.</p><button class="text-button" id="clear-search">Clear search</button></div>
+          <div class="explore-bar"><button class="text-button era-button" id="jump-start">2006</button><div class="drag-hint"><span data-icon="left"></span><span data-icon="hand"></span><span>Drag to explore the timeline</span><span data-icon="right"></span></div><button class="text-button era-button" id="jump-end">2026</button></div>
+          <div class="overview" aria-label="Jump to a year" id="year-overview"></div>
+        </section>
+
+        <section class="collection" aria-label="Browse the complete collection" id="collection"></section>
+        <footer class="site-footer"><span>A personal collection by <a href="https://harryjameschapman.com">Harry James Chapman</a></span><button class="text-button" id="about-button">About this collection <span data-icon="info"></span></button></footer>
+      </main>
+      <p class="sr-only" id="announcement" aria-live="polite"></p>
+    </div>
+
+    <dialog id="details-dialog" class="details-dialog" aria-labelledby="detail-title">
+      <button class="icon-button close-dialog" aria-label="Close device details" data-icon="close"></button>
+      <div id="detail-content"></div>
+    </dialog>
+    <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title">
+      <div class="search-heading"><h2 id="search-title">Find a device</h2><button class="icon-button" data-close="search-dialog" aria-label="Close search" data-icon="close"></button></div>
+      <label class="search-field"><span data-icon="search"></span><input id="search-input" type="search" placeholder="A device, a year, a memory…" autocomplete="off" aria-label="Search device name, year or specifications" /></label>
+      <div id="search-results" class="search-results"></div>
+    </dialog>
+    <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title">
+      <button class="icon-button close-dialog" data-close="about-dialog" aria-label="Close about this collection" data-icon="close"></button>
+      <span class="eyebrow">ABOUT THE COLLECTION</span><h2 id="about-title">Twenty years of everyday technology.</h2>
+      <p>This is Harry’s personal history of phones, laptops and desktop PCs, beginning in 2006. The dates on the timeline are when each device joined the collection. Early dates are approximate where shown.</p>
+      <p>Five PC builds trace the journey from a Dino PC to the Meshroom D. The 2022 processor change is an upgrade to the Meshlicious build.</p>
+      <h3>A note on the details</h3><p>Recorded configurations come from Harry’s inventory. Product information, launch prices and published benchmarks are shown separately, with sources. Missing personal specifications remain unrecorded.</p>
+      <p>Device images are consistent, AI-generated reference illustrations, not photographs of Harry’s actual hardware. Unrecorded colours are illustrative. Prices are original-market launch prices, not purchase prices or current valuations.</p>
+      <p class="about-signoff">Built to remember the things we used every day.</p>
+    </dialog>
+    <noscript><div class="noscript"><h2>My Devices · 2006–2026</h2><p>This interactive collection needs JavaScript. Please enable it to explore the timeline.</p></div></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
