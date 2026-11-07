@@ -2,10 +2,6 @@ MIT License
 
 Copyright (c) 2026 Harry Chapman
 
-Dual Licensing Notice:
-- The software code, interactive timeline viewer engine, scripts, and styling are licensed under the MIT License above.
-- The personal biographical dataset (src/data.js) and original device pixel illustrations (assets/) are licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
